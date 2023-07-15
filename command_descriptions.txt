@@ -1,0 +1,78 @@
+Command: 
+    U (undo line)
+
+Description: 
+    Undoes all the changes made on the last line that was edited.
+
+Example:
+	A very intelligent turtle  
+	  xxxx				Delete very
+
+	A intelligent turtle  
+		      xxxxxx		Delete turtle
+
+	A intelligent  
+					Restore line with "U"
+	A very intelligent turtle  
+----------------------------------------------------------------
+
+Command:
+    ZZ
+
+Description:
+    Writes the file and exits.
+----------------------------------------------------------------
+
+Command:
+    :e!
+
+Description:
+    Reloads the original version of the file, before any writing.
+----------------------------------------------------------------
+
+Command:
+    CTRL-] (jump to tag)
+
+Description:
+    Jumps to the where the tag points to.
+----------------------------------------------------------------
+
+Command:
+    CTRL-o (back to last tag)
+
+Description:
+    Jumps back to the previous tag that you navegated.
+----------------------------------------------------------------
+
+Command:
+    :help {subject} (getting help)
+
+Description:
+    Display the help file for the provided subject.
+    By default, the help system displays the normal-mode commands.
+    To identify other modes, use a mode prefix.
+
+    The referrence of all the prefixes can be found within:
+    :help help-summary
+
+    Within :help command you can type some text and press CTRL-D for
+    a list of acailable topics. Tab to complete.
+
+    To access a general VIM documentation:
+    :help Q_ct
+
+    Vim has a number of options that enable you to configure and
+    customize the editor. 
+
+    To get a list of all options:
+    :help options.txt
+
+    You can get more information about an error with:
+    :help {error code}
+
+Example:
+    :help CTRL-H
+                Display help for the CTRL-H command in normal-mode.
+    :help i_CTRL-H
+                Displays help fot the CTRL-H command in insert-mode.
+----------------------------------------------------------------
